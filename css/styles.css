@@ -797,22 +797,39 @@ img {
 }
 
 /* Custom checkbox Ver 1 */
-input:checked + .modal-form-agreement-text > .modal-form-checkbox {
+
+.input-visually-hidden:checked
+  + .label-modal-form-agreement-text
+  > .span-modal-form-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4f4fd;
+}
+
+.input-visually-hidden:checked
+  + .label-modal-form-agreement-text
+  > .span-modal-form-checkbox
+  > .modal-form-checkbox-icon {
+  opacity: 1;
+  fill: #f4f4fd;
+}
+
+/* input:checked + .modal-form-agreement-text > .modal-form-checkbox {
   stroke: #2e2f42;
   stroke-opacity: 0.4;
   background-color: none;
   border-radius: 2px;
   background-color: #404bbf;
   border: none;
-}
+} */
 
-input:checked
+/* input:checked
   + .modal-form-agreement-text
   > .modal-form-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
   fill: #f4f4fd;
-}
+} */
 
 /* input[type='checkbox']:checked
   + .modal-form-agreement-text
@@ -825,6 +842,9 @@ input:checked
   border: none;
 } */
 
+.modal-comment {
+  margin-bottom: 16px;
+}
 .modal-form-agreement {
   margin-bottom: 24px;
 }
