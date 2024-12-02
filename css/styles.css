@@ -798,21 +798,19 @@ img {
 
 /* Custom checkbox Ver 1 */
 
-.input-visually-hidden:checked
-  + .label-modal-form-agreement-text
-  > .span-modal-form-checkbox {
+/* .visually-hidden:checked + .modal-form-agreement-text > .modal-form-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4f4fd;
-}
+} */
 
-.input-visually-hidden:checked
+/* .input-visually-hidden:checked
   + .label-modal-form-agreement-text
   > .span-modal-form-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
   fill: #f4f4fd;
-}
+} */
 
 /* input:checked + .modal-form-agreement-text > .modal-form-checkbox {
   stroke: #2e2f42;
@@ -831,16 +829,21 @@ img {
   fill: #f4f4fd;
 } */
 
-/* input[type='checkbox']:checked
+input[type='checkbox']:checked
   + .modal-form-agreement-text
-  .modal-form-checkbox {
-  stroke: #2e2f42;
-  stroke-opacity: 0.4;
-  background-color: none;
-  border-radius: 2px;
+  > .modal-form-checkbox {
   background-color: #404bbf;
   border: none;
-} */
+  fill: #f4f4fd;
+}
+
+input[type='checkbox']:checked
+  + .modal-form-agreement-text
+  > .modal-form-checkbox
+  > .modal-form-checkbox-icon {
+  opacity: 1;
+  fill: #f4f4fd;
+}
 
 .modal-comment {
   margin-bottom: 16px;
@@ -878,13 +881,6 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity;
 }
-/* input[type='checkbox']:checked
-  + .modal-form-agreement-text
-  .modal-form-checkbox
-  .modal-form-checkbox-icon {
-  opacity: 1;
-  fill: #f4f4fd;
-} */
 
 input[type='checkbox']:focus-visible
   + .modal-form-agreement-text
